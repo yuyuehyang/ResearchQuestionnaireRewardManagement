@@ -288,7 +288,7 @@
 
   <script>
     const SHEET_ID = '1RqtBAlK7_sG5WUiiJCm9Ypr4CMDgi55VDzmCymPUcD4';
-    const GID = '1152428699';
+    const GID = '0';
     const CSV_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/export?format=csv&gid=${GID}`;
 
     let data = [];
@@ -342,7 +342,7 @@
     function performSearch(studentId, resultDiv, loading) {
       loading.classList.remove('show');
 
-      const idIndex = findColumnIndex(['Participant', '學號', 'Student ID']);
+      const idIndex = findColumnIndex(['學號', 'Participant']);
       const nameIndex = findColumnIndex(['姓名', 'Name']);
       const participationIndex = findColumnIndex(['參與費', 'Participation fee']);
       const powerBankIndex = findColumnIndex(['行動電源', 'Power Bank']);
